@@ -1,0 +1,15 @@
+.vagrant
+.DS_Store
+/app/.DS_Store
+.idea
+.project
+.strong-pm
+coverage
+node_modules/
+dump/
+npm-debug.log
+DBdump
+.idea/
+.vscode/
+tmp/
+temp/
