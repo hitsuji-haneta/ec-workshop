@@ -47,7 +47,7 @@ const ActionArea = () => {
         key={`btn_${i}`}
         onClick={() => {
           if (a.nextMessage) setMessage(a.nextMessage);
-          if (a.nextAction) setAction(a.nextAction);
+          if (a.nextAction) setAction(a.nextAction, progress);
           if (a.nextViewer) setViewerState(a.nextViewer);
           if (a.nextPerson) setPerson(a.nextPerson);
           if (a.nextProgress) setProgress(a.nextProgress);

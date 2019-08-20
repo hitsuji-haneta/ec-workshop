@@ -3,7 +3,7 @@ import React, { useState, createContext } from 'react';
 const Context = createContext();
 const Provider = ({ children }) => {
   const [action, setActionButtons] = useState([]);
-  const setAction = name => {
+  const setAction = (name, progress = 0) => {
     switch (name) {
       case 'person_1':
         setActionButtons([
@@ -83,14 +83,14 @@ const Provider = ({ children }) => {
           { text: '赤', nextMessage: 'bye_2', nextAction: 'byerr' },
           {
             text: '青',
-            nextMessage: 'bye_2rb',
-            nextAction: 'byerb',
-            nextPerson: 'person_2rb2'
+            nextMessage: progress >= 3 ? 'bye_2rb' : 'bye_2',
+            nextAction: progress >= 3 ? 'byerb' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2rb2' : 'person_2rb'
           },
           {
             text: '黄',
             nextMessage: 'bye_2',
-            nextAction: 'byery',
+            nextAction: 'bye',
             nextPerson: 'person_2ry'
           },
           {
@@ -105,15 +105,15 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '赤',
-            nextMessage: 'bye_2rb',
-            nextAction: 'byerb',
-            nextPerson: 'person_2rb2'
+            nextMessage: progress >= 3 ? 'bye_2rb' : 'bye_2',
+            nextAction: progress >= 3 ? 'byerb' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2rb2' : 'person_2rb'
           },
           { text: '青', nextMessage: 'bye_2', nextAction: 'byebb' },
           {
             text: '黄',
             nextMessage: 'bye_2',
-            nextAction: 'byeby',
+            nextAction: 'bye',
             nextPerson: 'person_2by'
           },
           {
@@ -129,16 +129,16 @@ const Provider = ({ children }) => {
           {
             text: '赤',
             nextMessage: 'bye_2',
-            nextAction: 'byery',
+            nextAction: 'bye',
             nextPerson: 'person_2ry'
           },
           {
             text: '青',
             nextMessage: 'bye_2',
-            nextAction: 'byeby',
+            nextAction: 'bye',
             nextPerson: 'person_2by'
           },
-          { text: '黄', nextMessage: 'bye_2', nextAction: 'byeyy' },
+          { text: '黄', nextMessage: 'bye_2', nextAction: 'bye' },
           {
             text: '戻る',
             nextMessage: 'map',
@@ -173,50 +173,12 @@ const Provider = ({ children }) => {
             text: '戻る',
             nextMessage: 'map',
             nextAction: 'map',
-            nextViewer: 'map'
+            nextViewer: 'map',
+            nextProgress: 4
           }
         ]);
         break;
-      case 'byery':
-        setActionButtons([
-          {
-            text: '戻る',
-            nextMessage: 'map',
-            nextAction: 'map',
-            nextViewer: 'map'
-          }
-        ]);
-        break;
-      case 'byebb':
-        setActionButtons([
-          {
-            text: '戻る',
-            nextMessage: 'map',
-            nextAction: 'map',
-            nextViewer: 'map'
-          }
-        ]);
-        break;
-      case 'byeby':
-        setActionButtons([
-          {
-            text: '戻る',
-            nextMessage: 'map',
-            nextAction: 'map',
-            nextViewer: 'map'
-          }
-        ]);
-        break;
-      case 'byeyy':
-        setActionButtons([
-          {
-            text: '戻る',
-            nextMessage: 'map',
-            nextAction: 'map',
-            nextViewer: 'map'
-          }
-        ]);
-        break;
+
       case 'person_3':
         setActionButtons([
           {
