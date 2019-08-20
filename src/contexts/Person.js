@@ -6,6 +6,7 @@ import Person2ry from "../images/person_2_ry.png";
 import Person2bb from "../images/person_2_bb.png";
 import Person2by from "../images/person_2_by.png";
 import Person2yy from "../images/person_2_yy.png";
+import Person2rb2 from "../images/person_2_rb2.png";
 import Person3 from "../images/person_3.png";
 import Person4 from "../images/person_4.png";
 import Saru from "../images/saru.png";
@@ -39,8 +40,11 @@ const Provider = ({ children }) => {
       case "person_2yy":
         setPersonImage(Person2yy);
         break;
+      case "person_2rb2":
+        setPersonImage(Person2rb2);
+        break;
 
-      case "person_3":
+        case "person_3":
         setPersonImage(Person3);
         break;
       case "person_4":
