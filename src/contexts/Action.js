@@ -224,14 +224,14 @@ const Provider = ({ children }) => {
         ]);
         break;
 
-        case 'person_3':
+      case 'person_3':
         setActionButtons([
           {
             text: 'いま何時ですか',
-            nextMessage: 'bye_3',
+            nextMessage: 'person_3time',
             nextAction: 'bye'
           },
-          { text: 'なんでもいです', nextMessage: 'bye_3', nextAction: 'bye' },
+          { text: 'なんでもないです', nextMessage: 'bye_3', nextAction: 'bye' },
           {
             text: '戻る',
             nextMessage: 'map',

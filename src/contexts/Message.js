@@ -62,8 +62,16 @@ const Provider = ({ children }) => {
       case "person_3":
         setMessageText(`やぁ`);
         break;
+      case "person_3time":
+        const date = new Date();
+        setMessageText(`${date.getHours()}時${date.getMinutes()}分だよ。
+そんなことより、あのカレンダー、よく見るとちょっと変でしょ？
+カメレオンの秘密が隠れているらしいよ。
+ヤギに英語を教わるとわかるとか聞いたな、、カオスw
+`);
+        break;
       case "bye_3":
-        setMessageText(`やぁ`);
+        setMessageText(`じゃあね`);
         break;
       case "person_4":
         setMessageText(`げんき？`);

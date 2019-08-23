@@ -56,7 +56,7 @@ const Map = () => {
     <Wrapper>
       <Item
         style={{ top: "0px", left: "100px" }}
-        onClick={() => setPerson1()}
+        onClick={() => setPerson3()}
         src={Clock}
         alt="clock"
       />
@@ -68,7 +68,7 @@ const Map = () => {
       />
       <Item
         style={{ bottom: "0px", left: "100px" }}
-        onClick={() => setPerson3()}
+        onClick={() => setPerson1()}
         src={Chair}
         alt="chair"
       />
