@@ -18,7 +18,7 @@ const Provider = ({ children }) => {
         setMessageText(`星は英語でstarと言うんだよ`);
         break
         case "person_1_c":
-        setMessageText(`お金は英語でmanyと言うんだよ`);
+        setMessageText(`お金は英語でmoneyと言うんだよ`);
         break
         case "person_1_d":
         setMessageText(`三角は英語でtriangleと言うんだよ`);
