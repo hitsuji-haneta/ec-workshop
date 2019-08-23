@@ -10,7 +10,7 @@ const Provider = ({ children }) => {
     switch (name) {
       case "person_1":
         setMessageText(`なにか用かね?`);
-        break; 
+        break;
         case "person_1_a":
         setMessageText(`どの英語を知りたいのかな？`);
         break

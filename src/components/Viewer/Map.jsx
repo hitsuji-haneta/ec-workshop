@@ -5,6 +5,7 @@ import Clock from "../../images/clock.png";
 import Table from "../../images/table.png";
 import Chair from "../../images/chair.png";
 import Box from "../../images/box.png";
+import Calendar from "../../images/calendar.png";
 import Window from "../../contexts/Window";
 import Person from "../../contexts/Person";
 import Message from "../../contexts/Message";
@@ -18,7 +19,12 @@ const Wrapper = styled.div`
 `;
 
 const Item = styled.img`
-  max-height: 100px;
+  @media screen and (max-width: 740px) {
+    max-height: 60px;
+  }
+  @media screen and (min-width: 740px) {
+    max-height: 100px;
+  }
   position: absolute;
 `;
 
@@ -55,28 +61,34 @@ const Map = () => {
   return (
     <Wrapper>
       <Item
-        style={{ top: "5vh", left: "20vw" }}
+        style={{ top: "5%", left: "10%" }}
         onClick={() => setPerson3()}
         src={Clock}
         alt="clock"
       />
       <Item
-        style={{ bottom: "5vh", right: "20vw" }}
+        style={{ top: "50%", right: "50%" }}
         onClick={() => setPerson2()}
         src={Table}
         alt="table"
       />
       <Item
-        style={{ bottom: "5vh", left: "20vw" }}
+        style={{ bottom: "20%", left: "15%" }}
         onClick={() => setPerson1()}
         src={Chair}
         alt="chair"
       />
       <Item
-        style={{ top: "5vh", right: "20vw" }}
+        style={{ top: "15%", right: "30%" }}
         onClick={() => setPerson4()}
         src={Box}
         alt="box"
+      />
+      <Item
+        style={{ bottom: "5%", right: "20%" }}
+        onClick={() => setPerson4()}
+        src={Calendar}
+        alt="calendar"
       />
     </Wrapper>
   );
