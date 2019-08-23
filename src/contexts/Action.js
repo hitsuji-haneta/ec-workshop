@@ -270,6 +270,16 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case 'calendar':
+        setActionButtons([
+          {
+            text: '戻る',
+            nextMessage: 'map',
+            nextAction: 'map',
+            nextViewer: 'map'
+          }
+        ]);
+        break;
       case 'opening_1':
         setActionButtons([
           {

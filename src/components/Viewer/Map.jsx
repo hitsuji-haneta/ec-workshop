@@ -58,6 +58,12 @@ const Map = () => {
     setAction("person_4");
     setViewerState("dialog");
   };
+  const setCalendar = () => {
+    setPerson("calendar");
+    setMessage("calendar");
+    setAction("calendar");
+    setViewerState("dialog");
+  };
   return (
     <Wrapper>
       <Item
@@ -86,7 +92,7 @@ const Map = () => {
       />
       <Item
         style={{ bottom: "5%", right: "20%" }}
-        onClick={() => setPerson4()}
+        onClick={() => setCalendar()}
         src={Calendar}
         alt="calendar"
       />

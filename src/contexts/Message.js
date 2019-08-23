@@ -82,6 +82,9 @@ const Provider = ({ children }) => {
       case "start":
         setMessageText("脱出ゲームスタート！");
         break;
+      case "calendar":
+        setMessageText("カレンダーだ。もう９月か。");
+        break;
       case "opening_1":
         setMessageText("うほうほ、うききー！");
         break;

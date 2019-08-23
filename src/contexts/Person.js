@@ -13,6 +13,7 @@ import Person2bb2 from "../images/person_2_bb2.png";
 import Person2yy2 from "../images/person_2_yy2.png";
 import Person3 from "../images/person_3.png";
 import Person4 from "../images/person_4.png";
+import Calendar from "../images/calendar.png";
 import Saru from "../images/saru.png";
 import Niwatori from "../images/niwatori.png";
 import Wani from "../images/wani.png";
@@ -60,12 +61,16 @@ const Provider = ({ children }) => {
         setPersonImage(Person2yy2);
         break;
 
-        case "person_3":
+      case "person_3":
         setPersonImage(Person3);
         break;
       case "person_4":
         setPersonImage(Person4);
         break;
+
+      case "calendar":
+          setPersonImage(Calendar);
+          break;
       case "saru":
         setPersonImage(Saru);
         break;
