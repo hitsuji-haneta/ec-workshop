@@ -55,25 +55,25 @@ const Map = () => {
   return (
     <Wrapper>
       <Item
-        style={{ top: "0px", left: "100px" }}
+        style={{ top: "5vh", left: "20vw" }}
         onClick={() => setPerson3()}
         src={Clock}
         alt="clock"
       />
       <Item
-        style={{ bottom: "0px", right: "100px" }}
+        style={{ bottom: "5vh", right: "20vw" }}
         onClick={() => setPerson2()}
         src={Table}
         alt="table"
       />
       <Item
-        style={{ bottom: "0px", left: "100px" }}
+        style={{ bottom: "5vh", left: "20vw" }}
         onClick={() => setPerson1()}
         src={Chair}
         alt="chair"
       />
       <Item
-        style={{ top: "0px", right: "100px" }}
+        style={{ top: "5vh", right: "20vw" }}
         onClick={() => setPerson4()}
         src={Box}
         alt="box"
