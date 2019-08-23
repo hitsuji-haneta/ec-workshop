@@ -80,18 +80,23 @@ const Provider = ({ children }) => {
         break;
       case 'red':
         setActionButtons([
-          { text: '赤', nextMessage: 'bye_2', nextAction: 'byerr' },
+          {
+            text: '赤',
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 3 ? 'byerr' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2rr2' : 'person_2rr'
+          },
           {
             text: '青',
-            nextMessage: progress >= 3 ? 'bye_2rb' : 'bye_2',
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
             nextAction: progress >= 3 ? 'byerb' : 'bye',
             nextPerson: progress >= 3 ? 'person_2rb2' : 'person_2rb'
           },
           {
             text: '黄',
-            nextMessage: 'bye_2',
-            nextAction: 'bye',
-            nextPerson: 'person_2ry'
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 3 ? 'byery' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2ry2' : 'person_2ry'
           },
           {
             text: '戻る',
@@ -105,11 +110,16 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '赤',
-            nextMessage: progress >= 3 ? 'bye_2rb' : 'bye_2',
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
             nextAction: progress >= 3 ? 'byerb' : 'bye',
             nextPerson: progress >= 3 ? 'person_2rb2' : 'person_2rb'
           },
-          { text: '青', nextMessage: 'bye_2', nextAction: 'byebb' },
+          {
+            text: '青',
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 3 ? 'byebb' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2bb2' : 'person_2bb'
+          },
           {
             text: '黄',
             nextMessage: 'bye_2',
@@ -128,9 +138,9 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '赤',
-            nextMessage: 'bye_2',
-            nextAction: 'bye',
-            nextPerson: 'person_2ry'
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 3 ? 'byery' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2ry2' : 'person_2ry'
           },
           {
             text: '青',
@@ -138,7 +148,12 @@ const Provider = ({ children }) => {
             nextAction: 'bye',
             nextPerson: 'person_2by'
           },
-          { text: '黄', nextMessage: 'bye_2', nextAction: 'bye' },
+          {
+            text: '黄',
+            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 3 ? 'byeyy' : 'bye',
+            nextPerson: progress >= 3 ? 'person_2yy2' : 'person_2yy'
+          },
           {
             text: '戻る',
             nextMessage: 'map',
@@ -150,10 +165,10 @@ const Provider = ({ children }) => {
       case 'byerr':
         setActionButtons([
           {
-            text: '戻る',
-            nextMessage: 'map',
-            nextAction: 'map',
-            nextViewer: 'map'
+            text: '次へ',
+            nextMessage: 'bye_2rr',
+            nextAction: 'bye',
+            nextPerson: 'person_2rr'
           }
         ]);
         break;
@@ -161,7 +176,7 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '次へ',
-            nextMessage: 'bye_2rb2',
+            nextMessage: 'bye_2rb',
             nextAction: 'byerb2',
             nextPerson: 'person_2rb'
           }
@@ -178,8 +193,38 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case 'byery':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'bye_2ry',
+            nextAction: 'bye',
+            nextPerson: 'person_2ry'
+          }
+        ]);
+        break;
+      case 'byebb':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'bye_2bb',
+            nextAction: 'bye',
+            nextPerson: 'person_2bb'
+          }
+        ]);
+        break;
+      case 'byeyy':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'bye_2yy',
+            nextAction: 'bye',
+            nextPerson: 'person_2yy'
+          }
+        ]);
+        break;
 
-      case 'person_3':
+        case 'person_3':
         setActionButtons([
           {
             text: 'いま何時ですか',

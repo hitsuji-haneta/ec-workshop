@@ -41,11 +41,23 @@ const Provider = ({ children }) => {
       case "bye_2":
         setMessageText(`ども`);
         break;
-      case "bye_2rb":
+      case "bye_2get":
         setMessageText(`どぞ`);
         break;
-      case "bye_2rb2":
+      case "bye_2rr":
+        setMessageText(`え、、何これいらない、、(三角を手に入れた)`);
+        break;
+      case "bye_2rb":
         setMessageText(`わーい(魚を手に入れた)`);
+        break;
+      case "bye_2ry":
+        setMessageText(`わーい。でもなんか汚いな、、(水を手に入れた)`);
+        break;
+      case "bye_2bb":
+        setMessageText(`え、、何これいらない、、(星を手に入れた)`);
+        break;
+      case "bye_2yy":
+        setMessageText(`え、いいんですか？あざす！(お金を手に入れた)`);
         break;
       case "person_3":
         setMessageText(`やぁ`);
