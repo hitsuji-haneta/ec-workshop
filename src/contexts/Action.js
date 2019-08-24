@@ -280,6 +280,100 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case 'calendar_button':
+        setActionButtons([
+          {
+            text: '日',
+            nextMessage: 'calendar_s',
+            nextAction: 'calendar_s'
+          },
+          {
+            text: '月',
+            nextMessage: 'calendar_m',
+            nextAction: 'calendar_m'
+          },
+          {
+            text: '火',
+            nextMessage: 'calendar_t',
+            nextAction: 'calendar_t'
+          },
+          {
+            text: '水',
+            nextMessage: 'calendar_w',
+            nextAction: 'calendar_w'
+          },
+          {
+            text: '木',
+            nextMessage: 'calendar_t',
+            nextAction: 'calendar_t'
+          },
+          {
+            text: '金',
+            nextMessage: 'calendar_f',
+            nextAction: 'calendar_f'
+          },
+          {
+            text: '土',
+            nextMessage: 'calendar_s',
+            nextAction: 'calendar_s'
+          },
+        ]);
+        break;
+      case 'calendar_s':
+        setActionButtons([
+          {
+            text: '戻る',
+            nextMessage: 'map',
+            nextAction: 'map',
+            nextViewer: 'map',
+            nextProgress: 5
+          }
+        ]);
+        break;
+      case 'calendar_m':
+        setActionButtons([
+          {
+            text: '戻る',
+            nextMessage: 'map',
+            nextAction: 'map',
+            nextViewer: 'map',
+            nextProgress: 5
+          }
+        ]);
+        break;
+      case 'calendar_t':
+        setActionButtons([
+          {
+            text: '戻る',
+            nextMessage: 'map',
+            nextAction: 'map',
+            nextViewer: 'map',
+            nextProgress: 5
+          }
+        ]);
+        break;
+      case 'calendar_w':
+        setActionButtons([
+          {
+            text: '戻る',
+            nextMessage: 'map',
+            nextAction: 'map',
+            nextViewer: 'map',
+            nextProgress: 5
+          }
+        ]);
+        break;
+      case 'calendar_f':
+        setActionButtons([
+          {
+            text: '戻る',
+            nextMessage: 'map',
+            nextAction: 'map',
+            nextViewer: 'map',
+            nextProgress: 5
+          }
+        ]);
+        break;
       case 'opening_1':
         setActionButtons([
           {

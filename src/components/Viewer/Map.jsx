@@ -10,6 +10,7 @@ import Window from "../../contexts/Window";
 import Person from "../../contexts/Person";
 import Message from "../../contexts/Message";
 import Action from "../../contexts/Action";
+import Progress from "../../contexts/Progress";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -33,6 +34,7 @@ const Map = () => {
   const { setPerson } = useContext(Person.Context);
   const { setMessage } = useContext(Message.Context);
   const { setAction } = useContext(Action.Context);
+  const { progress } = useContext(Progress.Context);
 
   const setPerson1 = () => {
     setPerson("person_1");
@@ -60,8 +62,8 @@ const Map = () => {
   };
   const setCalendar = () => {
     setPerson("calendar");
-    setMessage("calendar");
-    setAction("calendar");
+    setMessage(progress >= 3 ? "calendar_button" : "calendar");
+    setAction(progress >= 3 ? "calendar_button" : "calendar");
     setViewerState("dialog");
   };
   return (

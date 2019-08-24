@@ -85,6 +85,24 @@ const Provider = ({ children }) => {
       case "calendar":
         setMessageText("カレンダーだ。もう９月か。");
         break;
+      case "calendar_button":
+        setMessageText("あれ？よく見ると曜日がボタンになってる！どれか押してみよう。");
+        break;
+      case "calendar_s":
+        setMessageText("あ、文字が浮かび上がってきた！「青」だって。");
+        break;
+      case "calendar_m":
+        setMessageText("あ、文字が浮かび上がってきた！「黃」だって。");
+        break;
+      case "calendar_t":
+        setMessageText("あ、文字が浮かび上がってきた！「赤」だって。");
+        break;
+      case "calendar_w":
+        setMessageText("あ、文字が浮かび上がってきた！「オレンジ」だって。");
+        break;
+      case "calendar_f":
+        setMessageText("あ、文字が浮かび上がってきた！「紫」だって。");
+        break;
       case "opening_1":
         setMessageText("うほうほ、うききー！");
         break;
