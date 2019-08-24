@@ -71,7 +71,7 @@ const Provider = ({ children }) => {
 `);
         break;
       case "bye_3":
-        setMessageText(`じゃあね`);
+        setMessageText(`お魚たべたいなー`);
         break;
       case "person_4":
         setMessageText(`げんき？`);
