@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Message from "../../contexts/Message";
 
 const Wrapper = styled.div`
-  width: 90%;
   padding: 30px 30px;
 `;
 

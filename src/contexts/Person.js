@@ -17,7 +17,7 @@ import Calendar from "../images/calendar.png";
 import Saru from "../images/saru.png";
 import Niwatori from "../images/niwatori.png";
 import Wani from "../images/wani.png";
-import Start from "../images/emblem.gif";
+import Start from "../images/start.png";
 
 const Context = createContext();
 const Provider = ({ children }) => {

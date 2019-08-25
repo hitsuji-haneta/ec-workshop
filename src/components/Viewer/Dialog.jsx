@@ -11,8 +11,10 @@ const Wrapper = styled.div`
 `;
 const PersonImage = styled.img`
   max-height: 100%;
-  height: 100%;
   max-width: 90%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
 `;
 const PersonWrapper = styled.div`
   width: 100%;

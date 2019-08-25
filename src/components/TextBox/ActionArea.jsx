@@ -9,7 +9,6 @@ import Progress from "../../contexts/Progress";
 import Person from "../../contexts/Person";
 
 const Wrapper = styled.div`
-  width: 90%;
   padding: 30px 30px;
   display: flex;
   justify-content: space-evenly;

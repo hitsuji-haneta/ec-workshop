@@ -5,7 +5,7 @@ import MessageArea from "./MessageArea";
 import ActionArea from "./ActionArea";
 
 const Wrapper = styled.div`
-  width: 100%;
+  width: 90%;
   height: 45%;
   border-style: solid;
   border-color: black;
