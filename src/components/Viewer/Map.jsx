@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import Clock from "../../images/clock.png";
 import Table from "../../images/table.png";
-import Chair from "../../images/chair.png";
-import Box from "../../images/box.png";
+import Menu from "../../images/menu.png";
+import Reizouko from "../../images/reizouko.png";
 import Calendar from "../../images/calendar.png";
 import Window from "../../contexts/Window";
 import Person from "../../contexts/Person";
@@ -76,21 +76,21 @@ const Map = () => {
       />
       <Item
         style={{ top: "50%", right: "50%" }}
-        onClick={() => setPerson2()}
+        onClick={() => setPerson4()}
         src={Table}
         alt="table"
       />
       <Item
         style={{ bottom: "20%", left: "15%" }}
         onClick={() => setPerson1()}
-        src={Chair}
-        alt="chair"
+        src={Menu}
+        alt="Menu"
       />
       <Item
         style={{ top: "15%", right: "30%" }}
-        onClick={() => setPerson4()}
-        src={Box}
-        alt="box"
+        onClick={() => setPerson2()}
+        src={Reizouko}
+        alt="Reizouko"
       />
       <Item
         style={{ bottom: "5%", right: "20%" }}
