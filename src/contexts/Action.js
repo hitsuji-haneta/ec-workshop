@@ -407,6 +407,16 @@ const Provider = ({ children }) => {
       case 'opening_3':
         setActionButtons([
           {
+            text: '次へ',
+            nextMessage: 'opening_4',
+            nextAction: 'opening_4',
+            nextPerson: 'wani'
+          }
+        ]);
+        break;
+      case 'opening_4':
+        setActionButtons([
+          {
             text: 'ゲームスタート！',
             nextMessage: 'map',
             nextAction: 'map',

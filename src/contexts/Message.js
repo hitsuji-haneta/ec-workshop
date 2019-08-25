@@ -107,13 +107,16 @@ const Provider = ({ children }) => {
         setMessageText("ここは動物たちが集まるレストラン…");
         break;
       case "opening_1":
-        setMessageText("うほうほ、うききー！");
+        setMessageText("ライバル店の店長（サル）「あいつの店、おれの店より繁盛しやがって！くそ〜、客ごと閉じ込めて店の評判を落としてやる！」");
         break;
       case "opening_2":
-        setMessageText("ワニニッ！ワニニニッ");
+        setMessageText("ワニ店長「扉が開かなくなった？そんなワケ無いだろ。はやく仕事に戻りなさい。」");
         break;
       case "opening_3":
-        setMessageText("コケーッ、コッコッコ！");
+        setMessageText("ニワトリ店員「それが、確認したら本当だったんですよ！コケッ！」");
+        break;
+      case "opening_4":
+        setMessageText("ワニ店長「なんだって！？い、一体どうしたら…はっ！そこにいるのは人間じゃないか！人間って頭がいいんだろう？どうにかしてこの扉を開いてくれないか！？」");
         break;
       case "map":
         setMessageText(`クリックしてヒントを探してください`);
