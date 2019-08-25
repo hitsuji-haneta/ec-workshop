@@ -14,6 +14,7 @@ import Person2yy2 from "../images/person_2_yy2.png";
 import Person3 from "../images/person_3.png";
 import Person4 from "../images/person_4.png";
 import Calendar from "../images/calendar.png";
+import Restaurant from "../images/restaurant.png";
 import Saru from "../images/saru.png";
 import Niwatori from "../images/niwatori.png";
 import Wani from "../images/wani.png";
@@ -82,6 +83,9 @@ const Provider = ({ children }) => {
         break;
       case "start":
         setPersonImage(Start);
+        break;
+      case "restaurant":
+        setPersonImage(Restaurant);
         break;
       default:
         break;

@@ -374,6 +374,16 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
+      case 'opening_0':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'opening_1',
+            nextAction: 'opening_1',
+            nextPerson: 'saru'
+          }
+        ]);
+        break;
       case 'opening_1':
         setActionButtons([
           {

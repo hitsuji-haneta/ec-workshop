@@ -103,6 +103,9 @@ const Provider = ({ children }) => {
       case "calendar_f":
         setMessageText("あ、文字が浮かび上がってきた！「紫」だって。");
         break;
+      case "opening_0":
+        setMessageText("ここは動物たちが集まるレストラン…");
+        break;
       case "opening_1":
         setMessageText("うほうほ、うききー！");
         break;

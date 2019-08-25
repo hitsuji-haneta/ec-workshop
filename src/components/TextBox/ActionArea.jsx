@@ -30,9 +30,9 @@ const ActionArea = () => {
       return (
         <Button
           onClick={() => {
-            setMessage("opening_1");
-            setPerson("saru");
-            setAction("opening_1");
+            setMessage("opening_0");
+            setPerson("restaurant");
+            setAction("opening_0");
             setProgress(1);
           }}
         >
