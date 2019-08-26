@@ -82,21 +82,21 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '赤',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byerr' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2rr2' : 'person_2rr'
+            nextMessage: progress >= 4 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 4 ? 'byerr' : 'bye',
+            nextPerson: progress >= 4 ? 'person_2rr2' : 'person_2rr'
           },
           {
             text: '青',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byerb' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2rb2' : 'person_2rb'
+            nextMessage: progress >= 5 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 5 ? 'byerb' : 'bye',
+            nextPerson: progress >= 5 ? 'person_2rb2' : 'person_2rb'
           },
           {
             text: '黄',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byery' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2ry2' : 'person_2ry'
+            nextMessage: progress >= 4 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 4 ? 'byery' : 'bye',
+            nextPerson: progress >= 4 ? 'person_2ry2' : 'person_2ry'
           },
           {
             text: '戻る',
@@ -110,15 +110,15 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '赤',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byerb' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2rb2' : 'person_2rb'
+            nextMessage: progress >= 5 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 5 ? 'byerb' : 'bye',
+            nextPerson: progress >= 5 ? 'person_2rb2' : 'person_2rb'
           },
           {
             text: '青',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byebb' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2bb2' : 'person_2bb'
+            nextMessage: progress >= 4 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 4 ? 'byebb' : 'bye',
+            nextPerson: progress >= 4 ? 'person_2bb2' : 'person_2bb'
           },
           {
             text: '黄',
@@ -138,9 +138,9 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: '赤',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byery' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2ry2' : 'person_2ry'
+            nextMessage: progress >= 4 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 4 ? 'byery' : 'bye',
+            nextPerson: progress >= 4 ? 'person_2ry2' : 'person_2ry'
           },
           {
             text: '青',
@@ -150,9 +150,9 @@ const Provider = ({ children }) => {
           },
           {
             text: '黄',
-            nextMessage: progress >= 3 ? 'bye_2get' : 'bye_2',
-            nextAction: progress >= 3 ? 'byeyy' : 'bye',
-            nextPerson: progress >= 3 ? 'person_2yy2' : 'person_2yy'
+            nextMessage: progress >= 4 ? 'bye_2get' : 'bye_2',
+            nextAction: progress >= 4 ? 'byeyy' : 'bye',
+            nextPerson: progress >= 4 ? 'person_2yy2' : 'person_2yy'
           },
           {
             text: '戻る',
@@ -189,7 +189,7 @@ const Provider = ({ children }) => {
             nextMessage: 'map',
             nextAction: 'map',
             nextViewer: 'map',
-            nextProgress: 4
+            nextProgress: 6
           }
         ]);
         break;
@@ -229,7 +229,8 @@ const Provider = ({ children }) => {
           {
             text: 'いま何時ですか',
             nextMessage: 'person_3time',
-            nextAction: 'bye'
+            nextAction: 'bye',
+            nextProgress: 3
           },
           { text: 'なんでもないです', nextMessage: 'bye_3', nextAction: 'bye' },
           {
@@ -244,12 +245,12 @@ const Provider = ({ children }) => {
         setActionButtons([
           {
             text: 'はい',
-            nextMessage: 'bye_3',
+            nextMessage: 'bye_4',
             nextAction: 'bye'
           },
           {
             text: 'いいえ',
-            nextMessage: 'bye_3',
+            nextMessage: 'bye_4',
             nextAction: 'bye'
           },
           {
@@ -326,7 +327,7 @@ const Provider = ({ children }) => {
             nextMessage: 'map',
             nextAction: 'map',
             nextViewer: 'map',
-            nextProgress: 5
+            nextProgress: 4
           }
         ]);
         break;
@@ -337,7 +338,7 @@ const Provider = ({ children }) => {
             nextMessage: 'map',
             nextAction: 'map',
             nextViewer: 'map',
-            nextProgress: 5
+            nextProgress: 4
           }
         ]);
         break;
@@ -348,7 +349,7 @@ const Provider = ({ children }) => {
             nextMessage: 'map',
             nextAction: 'map',
             nextViewer: 'map',
-            nextProgress: 5
+            nextProgress: 4
           }
         ]);
         break;
@@ -359,7 +360,7 @@ const Provider = ({ children }) => {
             nextMessage: 'map',
             nextAction: 'map',
             nextViewer: 'map',
-            nextProgress: 5
+            nextProgress: 4
           }
         ]);
         break;
@@ -425,11 +426,83 @@ const Provider = ({ children }) => {
           }
         ]);
         break;
-      case 'map':
-      default:
-        setActionButtons([]);
+      case 'ending_1':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'ending_2',
+            nextAction: 'ending_2',
+            nextPerson: 'wani'
+          }
+        ]);
         break;
-    }
+      case 'ending_2':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'ending_3',
+            nextAction: 'ending_3',
+            nextPerson: 'niwatori'
+          }
+        ]);
+        break;
+      case 'ending_3':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'ending_4',
+            nextAction: 'ending_4',
+            nextPerson: 'person_4'
+          }
+        ]);
+        break;
+      case 'ending_4':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'ending_5',
+            nextAction: 'ending_5',
+            nextPerson: 'saru'
+          }
+        ]);
+        break;
+      case 'ending_5':
+        setActionButtons([
+          {
+            text: '次へ',
+            nextMessage: 'ending_6',
+            nextAction: 'ending_6',
+            nextPerson: 'restaurant'
+          }
+        ]);
+        break;
+      case 'ending_6':
+        setActionButtons([
+          {
+            text: 'もう一度あそぶ',
+            nextMessage: 'start',
+            nextAction: 'start',
+            nextPerson: 'start',
+            nextProgress: 0
+          }
+        ]);
+        break;
+      case 'start':
+        setActionButtons([
+          {
+            text: 'はじめる',
+            nextMessage: 'opening_0',
+            nextAction: 'opening_0',
+            nextPerson: 'restaurant',
+            nextProgress: 1
+          }
+        ]);
+        break
+      case 'map':
+        default:
+          setActionButtons([]);
+          break;
+      }
   };
 
   return (

@@ -56,8 +56,8 @@ const Map = () => {
   };
   const setPerson4 = () => {
     setPerson("person_4");
-    setMessage("person_4");
-    setAction("person_4");
+    setMessage(progress === 6 ? "ending_1" : "person_4");
+    setAction(progress === 6 ? "ending_1" : "person_4");
     setViewerState("dialog");
   };
   const setCalendar = () => {
