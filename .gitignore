@@ -13,3 +13,5 @@ DBdump
 .vscode/
 tmp/
 temp/
+build/
+.firebase
