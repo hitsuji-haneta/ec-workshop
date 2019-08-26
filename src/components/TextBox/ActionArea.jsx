@@ -11,8 +11,13 @@ import Person from "../../contexts/Person";
 const Wrapper = styled.div`
   padding: 30px 30px;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  @media screen and (max-width: 740px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 740px) {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 `;
 
 const ActionArea = () => {

@@ -6,7 +6,9 @@ import ActionArea from "./ActionArea";
 
 const Wrapper = styled.div`
   width: 90%;
-  height: 45%;
+  @media screen and (min-width: 740px) {
+    height: 45%;
+  }
   border-style: solid;
   border-color: black;
   border-radius: 10px;
